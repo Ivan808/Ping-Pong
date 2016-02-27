@@ -180,7 +180,7 @@ Ball.prototype.update = function(playerPaddle)
     if(top_y > 400 && g_context.touch == 0)
     {
         if(top_y < (playerPaddle.y + playerPaddle.height) && bottom_y > playerPaddle.y && top_x < (playerPaddle.x + playerPaddle.width) && bottom_x > playerPaddle.x)
-            {
+        {
             g_context.touch = g_context.touch + 1;
             this.y_speed = -3;
             this.x_speed = -3;
@@ -197,21 +197,21 @@ Ball.prototype.update = function(playerPaddle)
         }
     }
 
-
-  if(this.x - 5 < 20)
-  {
-    this.x = 25;
-    this.x_speed = -this.x_speed;
-  } else if(this.x + 5 > 580)
-  {
-    this.x = 575;
-    this.x_speed = -this.x_speed;
-  }
-  if (this.y - 5 < 20)
-  {
-      this.y = 25;
-      this.y_speed = -this.y_speed;
-  }
+   if(this.x - 5 < 20)
+   {
+       this.x = 25;
+       this.x_speed = -this.x_speed;
+   }   
+   else if(this.x + 5 > 580)
+   {
+       this.x = 575;
+       this.x_speed = -this.x_speed;
+   }
+   if (this.y - 5 < 20)
+   {
+       this.y = 25;
+       this.y_speed = -this.y_speed;
+   }
 };
 
 
