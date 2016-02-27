@@ -191,9 +191,9 @@ Ball.prototype.update = function(playerPaddle)
     {
         if(top_y < (playerPaddle.y + playerPaddle.height) && bottom_y > playerPaddle.y && top_x < (playerPaddle.x + playerPaddle.width) && bottom_x > playerPaddle.x)
         {
-          this.y_speed = -3;
-          this.x_speed = this.x_speed;
-          this.y += this.y_speed;
+            this.y_speed = -3;
+            this.x_speed = this.x_speed;
+            this.y += this.y_speed;
         }
     }
 
