@@ -1,0 +1,17 @@
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+input
+{
+    float: left;
+}
+
+canvas
+{
+    border: 1px solid black;
+    margin-left: 10px;
+}
