@@ -19,7 +19,7 @@ g_context.FPS = 60;
 
 window.onload = function()
 {
-   step();
+    step();
 };
 
 
